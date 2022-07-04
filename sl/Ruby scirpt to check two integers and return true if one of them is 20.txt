@@ -1,0 +1,13 @@
+def check(a,b) 
+ if(a==20 || b==20) 
+ return true 
+ else 
+ return a+b 
+ end 
+end 
+puts "enter no 1" 
+x=gets.chomp.to_i 
+puts "enter no2" 
+y=gets.chomp.to_i 
+res=check(x,y) 
+puts res 

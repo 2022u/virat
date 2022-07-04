@@ -1,0 +1,13 @@
+#!/usr/bin/perl 
+#use strict; 
+use warnings; 
+print "enter no1\n"; 
+$p=<STDIN>; 
+print "enter no2\n"; 
+$q=<STDIN>; 
+print "enter no3\n"; 
+$r=<STDIN>; 
+$max = $p > $q ? ($p > $r ? $p : $r) : ($r > $q ? $r : $q) ; 
+# implement all arithmetic operators 
+print $max; 
+exit(0); 

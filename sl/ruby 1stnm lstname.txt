@@ -1,0 +1,7 @@
+puts "first name" 
+fname=gets.chomp 
+puts "enter last name" 
+lname=gets.chomp 
+rfn=fname.reverse 
+rln=lname.reverse 
+puts "#{fname.reverse} #{rln}" 

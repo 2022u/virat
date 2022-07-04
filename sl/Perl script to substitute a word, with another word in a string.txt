@@ -1,0 +1,16 @@
+use strict; 
+use warnings; 
+my $myString = ""; 
+print "Please enter word: "; 
+$myString = <STDIN>; 
+chomp($myString); 
+print "Please enter word to search: "; 
+my $myWord2= <STDIN>; 
+chomp($myWord2); 
+print "Please enter word to replace: "; 
+my $myWord3 =<STDIN>; 
+chomp($myWord3); 
+my $myCount = $myString =~ s/$myWord2/$myWord3/; 
+print "$myString \n"; 
+print "$myCount \n"; 
+exit(0);

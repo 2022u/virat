@@ -1,0 +1,15 @@
+set lst1 {a1 b2 c1 A1}; 
+puts $lst1; 
+#lsort {a1 b2 c1 A1}; 
+set lst2 [lsort -ascii $lst1]; 
+puts $lst2; 
+set lst3 {5 54 3 22 66 77 31}; 
+set slst3 [lsort -integer $lst3]; 
+puts $slst3; 
+set rslst3 [lsort -integer -decreasing $lst3]; 
+puts $rslst3; 
+set lst4 {5.3 54.5 3.6 2.2 6.6 7.7 3.1}; 
+set slst4 [lsort -real $lst4]; 
+puts $slst4; 
+set ralst4 [lsort -real -decreasing $lst4 ]; 
+puts $ralst4; 

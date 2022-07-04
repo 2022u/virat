@@ -1,0 +1,12 @@
+#print "enter filename to read"; 
+my $file=$ARGV[0]; 
+chomp($file); 
+open(DATA,$file) or die $!; 
+@lines=<DATA>; 
+@rlines=reverse(@lines); 
+print @rlines; 
+foreach my $x (@rlines) { 
+ $rline=reverse($x); 
+ print $rline; 
+} 
+close(DATA); 

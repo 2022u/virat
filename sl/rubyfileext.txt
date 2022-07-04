@@ -1,0 +1,8 @@
+puts "enter filename" 
+file = gets.chomp 
+fbname = File.basename (file) # file name 
+puts "File name: "+fbname 
+ffextn = File.extname (file) # file extention 
+puts "Extention: "+ffextn 
+path_name= File.dirname (file) # path name 
+puts "Path name: "+path_name 

@@ -1,0 +1,12 @@
+def check(p,q) 
+ if((p<0 && q>100) or (p>100 && q<0)) 
+ return true 
+ else 
+ return false 
+ end 
+end 
+puts "enter no1" 
+a=gets.chomp.to_i 
+puts "enter no2" 
+b=gets.chomp.to_i 
+puts check(a,b) 

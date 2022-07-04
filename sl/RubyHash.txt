@@ -1,0 +1,10 @@
+marks = Hash.new 
+marks['c'] = 30 
+marks['java'] = 30 
+marks['sl'] = 30 
+marks['ml'] = 0 
+tmarks = 0 
+marks.each do |key,value| 
+ tmarks +=value 
+ end 
+puts "Total Marks: "+tmarks.to_s 

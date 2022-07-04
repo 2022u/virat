@@ -1,0 +1,8 @@
+puts "enter no"; 
+p =gets.chomp.to_i; 
+puts "enter no"; 
+q =gets.chomp.to_i; 
+puts "enter no"; 
+r =gets.chomp.to_i; 
+max = p > q ? (p > r ? p : r) : (r > q ? r : q) ; 
+puts " max of three nos is =#{max}"; 

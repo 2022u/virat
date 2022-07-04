@@ -1,0 +1,23 @@
+#implement shift,unshift,push,pop methods 
+#implement shift 
+@arr1=(1,2,3,4); 
+$ele=shift @arr1; 
+# shift delete the first element in the array and returns the element 
+print $ele; 
+#implement unshift 
+@arr1=(1,2,3,4); 
+#unshift add the element in the array at the begiening 
+print "before unshift :@arr1"; 
+unshift (@arr1,9); 
+print "after unshift : @arr1"; 
+#implement poo 
+@arr1=(1,2,3,4); 
+$ele=pop @arr1; 
+# pop delete the last element in the array and returns the element 
+print $ele."\n"; 
+#implement push 
+@arr1=(1,2,3,4); 
+#push add the element in the array at the last pos.. 
+print "before push :@arr1"; 
+push (@arr1,9); 
+print "after push : @arr1"; 

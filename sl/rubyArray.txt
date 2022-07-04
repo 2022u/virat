@@ -1,0 +1,28 @@
+arr1=[1,2,3,4,5,6,7,800,900] 
+puts arr1 
+#arr1.push(999) adding elements at end fo the array 
+#puts arr1 
+#puts arr1[4] display certian element 
+#puts arr1[-1] display the elements in reverse dirction 
+#puts arr1[3,5] diplay the elements form certian position and no of elements 
+#puts arr1.at(5) know the element at the given pos 
+#puts arr1.first(3) display first three elements 
+#puts arr1.last(5) display last five elements 
+#puts arr1.sort sort the array 
+#puts arr1.sort.reverse stort the array in reverse order 
+#x=[1,2,3] 
+#y=[4,5,6] 
+#z=x+y adding two arrays 
+#puts z 
+#puts arr1.delete(3) delete the specified elemet 
+#puts arr1 
+#arr1.pop delete the last element 
+#puts arr1 
+#puts arr1.length know the size of arry 
+#puts arr1.size know the size of arry 
+#arr1 << 10 adding the elements at the end 
+#puts arr1 
+#arr1.unshift(33) adding the elements at the end 
+#puts arr1 
+#arr1.insert(2,44)adding the eelenmntes at certian pos 
+#puts arr1 

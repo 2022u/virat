@@ -1,0 +1,9 @@
+# Get the modification time: 
+set now [clock seconds] 
+set filename "filemodifiedtime1.tcl" 
+set timestamp [file mtime $filename] 
+puts $timestamp 
+# Set the modification time to ‘now’: 
+#file mtime $filename [clock seconds] 
+#uts $mtime 
+puts "\n : [clock format $timestamp]\n" 

@@ -1,0 +1,15 @@
+puts "enter file name to copy"; 
+gets stdin fn 
+puts $fn 
+set fp [open $fn r] 
+set data [read $fp] 
+#puts $file_data 
+#close $fp 
+puts "enter new file name"; 
+gets stdin fn1 
+set fp1 [open $fn1 w+] 
+#puts "enter data to write"; 
+#gets stdin data; 
+puts $fp1 $data; 
+close $fp1 
+puts "file copied" 
