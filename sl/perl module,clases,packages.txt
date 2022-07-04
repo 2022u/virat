@@ -1,0 +1,57 @@
+MyClass.pm 
+package MyClass; 
+use strict; 
+use warnings; 
+# class variable ('our' for package visibility) 
+# 
+our $a1 = 3; # Would like to bind to a variable 
+our $class_variable2 = 3; 
+our $c=0; 
+sub new { 
+ my $class = shift; 
+ my $self = { }; 
+ bless $self, $class; 
+ return $self; 
+} 
+sub add { 
+ my $self = shift; 
+ print "class_variable: $a1\n"; 
+ #$a=shift; 
+ #$b=shift; 
+ ($a,$b)=@_; 
+ print $self; 
+ print " $a\n"; 
+ print "$b"; 
+ print $a+$b; 
+ #print "class_variable: $class_variable2\n"; 
+ #++$class_variable; # prove that other instances will see this change 
+} 
+sub subtract 
+{ 
+my $self=shift; 
+$a=shift; 
+$b=shift; 
+ #$c=$a-$b; 
+print "subtract:($a-$b)="; 
+print $a-$b; 
+} 
+sub mul 
+{ 
+my $self=shift; 
+$a=shift; 
+$b=shift; 
+$c=$a*$b; 
+return $c; 
+} 
+1; 
+ Myclass1.pl 
+#!/usr/bin/perl 
+use strict; 
+use warnings; 
+use MyClass; 
+my $res; 
+my $foo = MyClass->new(); 
+$foo->add(20,22); 
+$foo->subtract(55,22); 
+$res=$foo->mul(8,8); 
+print "\nresult=$res ";
