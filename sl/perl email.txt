@@ -1,17 +1,5 @@
-use strict; 
-use warnings; 
-use 5.010; 
- 
-use Email::Address; 
-print "enter email"; 
-my $line = <STDIN> ; 
-chomp($line); 
- 
-my $addresses = Email::Address->parse($line); 
-print $addresses,"\n"; 
-if($addresses==1) 
-{ 
-print "valied email address"; 
-} 
-else{ 
-print "invalied email address"; 
+print "enter email";
+$email=<stdin>;
+if($email=~/^[a-z 0-9 A-Z]+\@[a-z A-Z 0-9]+/){
+print("valid email";
+}
