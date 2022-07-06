@@ -1,5 +1,5 @@
 print "enter email";
 $email=<stdin>;
 if($email=~/^[a-z 0-9 A-Z]+\@[a-z A-Z 0-9]+/){
-print("valid email";
+print("valid email");
 }
