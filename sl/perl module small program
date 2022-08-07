@@ -1,0 +1,16 @@
+MyClass.pm 
+package MyClass; 
+use strict; 
+use warnings;  
+sub hello {
+print "\n in module myclass and in subroutine hello. Returning to perl program.";
+}
+
+ Myclass1.pl 
+#!/usr/bin/perl 
+use strict; 
+use warnings; 
+use MyClass; 
+my $foo = MyClass->new(); 
+$foo->hello();
+print "back to main perl program.";
